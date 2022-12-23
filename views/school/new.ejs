@@ -1,0 +1,80 @@
+<% layout('layouts/boilerplate') %>
+<h1 class="text-center">Create New Student</h1>
+
+<div class="col-6 offset-3">
+  <form action="/school" method="POST" novalidate class="validated-form">
+    <div class="mb-3">
+      <label class="form-label" for="name">Name</label>
+      <input
+        class="form-control"
+        type="text"
+        id="name"
+        name="student[name]"
+        required
+      />
+      <div class="valid-feedback">Looks good!</div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="address">Address</label>
+      <input
+        class="form-control"
+        type="text"
+        id="address"
+        name="student[address]"
+        required
+      />
+      <div class="valid-feedback">Looks good!</div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="image">Image URL</label>
+      <input
+        class="form-control"
+        type="text"
+        id="image"
+        name="student[image]"
+        required
+      />
+      <div class="valid-feedback">Looks good!</div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="description">Description</label>
+      <textarea
+        class="form-control"
+        type="text"
+        id="description"
+        name="student[description]"
+        required
+      ></textarea>
+      <div class="valid-feedback">Looks good!</div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="class">Class</label>
+      <input
+        class="form-control"
+        type="text"
+        id="class"
+        name="student[class]"
+        required
+      />
+      <div class="valid-feedback">Looks good!</div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="fees">Fees</label>
+      <input
+        class="form-control"
+        type="text"
+        id="fees"
+        name="student[fees]"
+        required
+      />
+    </div>
+
+    <div class="mb-3">
+      <button class="btn btn-success">Submit</button>
+    </div>
+  </form>
+  <a href="/school">All Students</a>
+</div>
